@@ -31,10 +31,10 @@ jobs:
     - name: Log in to DockerHub
       uses: docker/login-action@v1
       with:
-        username: ${{ secrets.devershettyharshavardhan }}
-        password: ${{ secrets.Harshavardhan7@ }}
+        username: ${{ devershettyharshavardhan }}
+        password: ${{ Harshavardhan7@ }}
 
     - name: Push Docker image to DockerHub
       run: |
-        docker tag myapp ${{ secrets.devershettyharshavardhan }}/myapp:${{ github.sha }}
-        docker push ${{ secrets.devershettyharshavardhan }}/myapp:${{ github.sha }}
+        docker tag myapp ${{ devershettyharshavardhan }}/myapp:${{ github.sha }}
+        docker push ${{ devershettyharshavardhan }}/myapp:${{ github.sha }}
